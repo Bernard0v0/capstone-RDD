@@ -3,7 +3,7 @@ conda env create -f environment.yml
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate RDD_env
 mim install mmcv-full==1.6.0 
-mim install mmcls
+sudo yum install -y openssl11
 pip install ipykernel
 python -m ipykernel install --user --name RDD_env --display-name RDD
 pip install -r yolov5/requirements.txt
@@ -41,3 +41,7 @@ cp datasets/RDD2022/Norway/test/images/* datasets/RDD2022/test1_images/
 cp datasets/RDD2022/Japan/test/images/* datasets/RDD2022/test1_images/
 cp datasets/RDD2022/United_States/test/images/* datasets/RDD2022/test1_images/
 mv val.txt datasets/RDD2022/Czech/train
+<!-- sudo yum install -y openssl11 -->
+<!-- python tools/train.py configs/swin/faster_swin_l12_deform_3.py --gpu-id 0 -->
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 2) local_rank: 0 (pid: 31797) of binary: /home/ec2-user/anaconda3/envs/RDD_test/bin/python
+debug:https://stackoverflow.com/questions/69468128/fail-attributeerror-module-collections-has-no-attribute-container
