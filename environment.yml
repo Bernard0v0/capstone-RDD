@@ -124,8 +124,6 @@ dependencies:
       - matplotlib-inline==0.1.7
       - mdurl==0.1.2
       - mmcls==0.25.0
-      - mmcv==1.6.0
-      - mmcv-full==1.6.0
       - model-index==0.1.11
       - numpy==1.23.4
       - opencv-python==4.9.0.80
