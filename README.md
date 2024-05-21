@@ -1,7 +1,7 @@
-# capstone-RDD
-## reproduce the enviornment
+# capstone-RDD (on AWS \[amazon linux 2 os\])
+## reproduce the environment
 conda env create -f environment.yml  
-## activate the enviornment
+## activate the environment
 source ~/anaconda3/etc/profile.d/conda.sh  
 conda activate RDD_env  
 ## download mmcv & other required packages
@@ -13,7 +13,7 @@ pip install -r yolov7/requirements.txt
 cd mmdetection  
 pip install -r requirements/build.txt  
 pip install -v -e .  
-## enable ipynb detect the enviornment
+## enable ipynb detect the environment
 pip install ipykernel  
 python -m ipykernel install --user --name RDD_env --display-name RDD  
 ## download datasets
@@ -52,7 +52,8 @@ mv val.txt datasets/RDD2022/Czech/train
 ## debugging
 - ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 2) local_rank: 0 (pid: 31797) of binary: /home/ec2-user/anaconda3/envs/RDD_test/bin/python: tools/train.py arg:local-rank -> local_rank
 - AttributeError: module 'collections' has no attribute 'Container': if not isinstance(inputs, collections.Container) or isinstance(inputs, torch.Tensor): -> import collections.abc || if not isinstance(inputs, collections.abc.Container) or isinstance(inputs, torch.Tensor):
-
+## notebook instance
+ml.p3.16xlarge
 
 
 # Acknowledgement
