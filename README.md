@@ -55,6 +55,10 @@ mv val.txt datasets/RDD2022/Czech/train
 ## notebook instance
 ml.p3.16xlarge
 
+## Local setting
+- Cuda error: no kernel image is available for execution on the device: pip3 install torch torchvision torchaudio --force-reinstall  --extra-index-url https://download.pytorch.org/whl/cu118
+- ImportError: libssl.so.1.1: cannot open shared object file: No such file or directory: wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb ||
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 
 # Acknowledgement
 - https://github.com/ultralytics/yolov5

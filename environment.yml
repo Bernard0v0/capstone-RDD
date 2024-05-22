@@ -1,4 +1,4 @@
-name: RDD_test
+name: RDD_env
 channels:
   - defaults
   - https://aws-ml-conda.s3.us-west-2.amazonaws.com
@@ -173,4 +173,4 @@ dependencies:
       - werkzeug==3.0.3
       - yapf==0.40.1
       - zipp==3.18.2
-prefix: /home/ec2-user/anaconda3/envs/RDD_test
+prefix: /home/ec2-user/anaconda3/envs/RDD_env
